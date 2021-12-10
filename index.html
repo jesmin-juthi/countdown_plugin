@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>countdown plugin</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="main">
+        <h2>new year is coming soon. Stay tune!</h2>
+        <div id="getting-started"></div>
+    </div><!-- /.main -->
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="assets/js/jquery.countdown.min.js"></script>
+    <script type="text/javascript">
+        $('#getting-started').countdown('2022/01/01', function(event) {
+            $(this).html(event.strftime(
+                '<div class="single-count"> <h4><span>%w</span>weeks</h4></div> <div class="single-count"> <h4><span>%d</span>days</h4></div> <div class="single-count"> <h4><span>%H</span>hours</h4></div> <div class="single-count"> <h4><span>%M</span>minutes</h4> </div> <div class="single-count"> <h4><span>%S</span>seconds</h4></div>'
+            ));
+        });
+    </script>
+</body>
+</html>

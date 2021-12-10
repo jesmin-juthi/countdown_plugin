@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main{
+    width: 1200px;
+    margin: 100px auto;
+    font-size: 26px;
+}
+
+.main h2 {
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 40px;
+    color: #303030;
+}
+
+#getting-started{
+    background-color: #da2065;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: #fff;
+    text-transform: capitalize;
+    padding: 40px 0;
+}
+
+.single-count{
+    text-align: center;
+    width: 20%;
+}
+
+.single-count span{
+    display: block;
+    font-size: 50px;
+}
